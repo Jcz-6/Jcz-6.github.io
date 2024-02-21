@@ -6,10 +6,11 @@ categories: blog posts
 ---
 Welcome to our second blog entry for the development of Saving Animals by Josh and Jakub.
 
-#Jakub
+`Jakub`
 
-During our first week I was researching different types of backends we could use for our project, imediatelly i narrowed it down to two options [Django][https://www.djangoproject.com/] and [Flask][https://flask.palletsprojects.com/en/3.0.x/], both are python based with a lot of community support and great documentation. After a discussion which Josh we chose Django as we are already familiar with it and our application will need a rest-api backend to serve our frontend and Django is more suited for that.
+The second week was quite slow as I was still trying to get my head around the full stack we will be using. I started focusing on the frontend by doing research into different frameworks, some options were Node, React and Svelt. Node was quickly rules out as its quite outdated and requires a lot of files to operate: a `single page` application would be better. Svelte seemed like the better option but we would have to learn it from scratch, we decided to go with React as we know a decent bit about how it works. This will give us a lot more time for our other moving parts.
 
-Next up was the database, Django comes with sqlite3 by default which is more than enough for most people with small projects but its quite basic and doesnt support features such as Geo Co-ordinate storage that is required for our app to work. After a bit of digging I found PostGIS which is an extension for a Postgres Data base which allows us to store geo-cords and gives us the ability to perform distance operations, On top of that I read that it can be integrated into Django quite seemlessly.
+As we have done React JS applications before we already knew where to start, we quickly developed a basic app and started testing some of our API endpoints but we wanted to do things a little different, instead of using `Fetch` for our calls we decided on using `Axios` as it delivers widespread browser support (especially older ones) due to the fact its based on XMLHttpRequest, on top of that it has automatic Json data transformation.
 
-After figuring this out I started a empty sample django app to try to connect to a postgres db, I quickly relised its not as easy as just having a Database running. I went on the Django docs website to find a solution for and I found [this][https://docs.djangoproject.com/en/5.0/ref/contrib/gis/install/postgis/].Which lists all the libaries needed for PostGIS and Django. Now I was ready to start developing the backend.
+Another thing that also changed is the way React is ran, as Create React App is no longer a thing since 2023, leaving us with a choice of toolchains available and we chose Vite as its well documented and efficient and it allows support for pure Java Script.
+ 
