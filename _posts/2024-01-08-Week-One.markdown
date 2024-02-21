@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Blog Week One"
+date:   2024-01-08 10:10:02 +0000
+categories: blog posts
+---
+Welcome to our first blog entry for the development of Saving Animals by Josh and Jakub.
