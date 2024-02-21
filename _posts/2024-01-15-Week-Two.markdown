@@ -8,9 +8,9 @@ Welcome to our second blog entry for the development of Saving Animals by Josh a
 
 `Jakub`
 
-The second week was quite slow as I was still trying to get my head around the full stack we will be using. I started focusing on the frontend by doing research into different frameworks, some options were Node, React and Svelt. Node was quickly rules out as its quite outdated and requires a lot of files to operate: a `single page` application would be better. Svelte seemed like the better option but we would have to learn it from scratch, we decided to go with React as we know a decent bit about how it works. This will give us a lot more time for our other moving parts.
+The second week was quite slow as I was still trying to get my head around the full stack we would be using. I started focusing on the front end by doing research into different frameworks, some options were Node, React and Svelt. Node was quickly ruled out as it’s quite outdated and requires a lot of files to operate: a `single page` application would be better. Svelte seemed like the better option but we would have to learn it from scratch, we decided to go with React as we know a decent bit about how it works. This will give us a lot more time for our other moving parts.
 
-As we have done React JS applications before we already knew where to start, we quickly developed a basic app and started testing some of our API endpoints but we wanted to do things a little different, instead of using `Fetch` for our calls we decided on using `Axios` as it delivers widespread browser support (especially older ones) due to the fact its based on XMLHttpRequest, on top of that it has automatic Json data transformation.
+As we have done React JS applications before we already knew where to start, we quickly developed a basic app and started testing some of our API endpoints but we wanted to do things a little differently, instead of using `Fetch` for our calls we decided on using `Axios` as it delivers widespread browser support (especially older ones) due to the fact it's based on XMLHttpRequest, on top of that it has automatic Json data transformation.
 
-Another thing that also changed is the way React is ran, as Create React App is no longer a thing since 2023, leaving us with a choice of toolchains available and we chose Vite as its well documented and efficient and it allows support for pure Java Script.
- 
+Another thing that also changed is the way React is run, as Create React App is no longer a thing since 2023, leaving us with a choice of toolchains available we chose Vite as it's well documented and efficient and it allows support for pure Java Script.
+

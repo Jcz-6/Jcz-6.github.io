@@ -8,20 +8,16 @@ Welcome to our fifth blog entry for the development of Saving Animals by Josh an
 
 `Jakub`
 
-Continuing from week four, we were in quite the pickle with our session authentication feature. After extensive research and some thinking I came upon templates in Django which allow to install a frontend into django itself therefore allowing us to run the frontend on django's `port 8000`.
+Continuing from week four, we were in quite the pickle with our session authentication feature. After extensive research and some thinking, I came upon templates in Django which allow us to install a frontend into Django itself therefore allowing us to run the frontend on Django's ` port 8000`.
 
 This allows us to overcome the cookie not setting issue, it was running on Dev perfectly. Now we were able to authenticate users in our frontend which brings us to React-Redux.
 
-Once again to up the appeal of this project and to make our lives 'easier' we decided to inject our React frontend with Redux, which is a state management system designed for complex projects such as our one. In essense Redux allows us to track the state of our React components with every detail showing in the Redux Dev Toolkit making debuggin and passing information to different components easier and more reliable. 
+Once again to up the appeal of this project and to make our lives 'easier' we decided to inject our React frontend with Redux, which is a state management system designed for complex projects such as our one. In essence Redux allows us to track the state of our React components with every detail showing in the Redux Dev Toolkit making debugging and passing information to different components easier and more reliable. 
 
-It sounds amazing right ? sadly there is a big catch, the added complexity and boiler plate not to mention that simple syntactic errors can cause havoc while not being picked up leaving us with only guesses to what went wrong, the biggest example of this occured when Jakub wrote `state` instead of `...state` the former returning a new piece of state while the lather builds in the previous iteration. Since the code was still working but nothing was displaying.
+It sounds amazing right? sadly there is a big catch, the added complexity and boilerplate not to mention that simple syntactic errors can cause havoc while not being picked up leaving us with only guesses as to what went wrong, the biggest example of this occurred when Jakub wrote `state` instead of `...state` the former returning a new piece of state while the lather builds in the previous iteration. Since the code was still working nothing was displaying.
 
-We struggled greatly with setting up redux as with all frontend tools they completely changed their docs and how things are set up quite recently making older material on the topic obsolete but we managed to do it and it paid of big time.
+We struggled greatly with setting up redux as with all frontend tools they completely changed their docs and how things are set up quite recently making older material on the topic obsolete but we managed to do it and it paid off big time.
 
-Redux uses a `store` which keeps all the dispatched state (things we can access from components) from our API. This alow us to update the information on our single page app easily. Redux was revolutionary for us as we both struggled with passing parameters and information through `useState , useParams and useProps` in React during our Full-Stack Module, its all soo messy and bortherline impossible to track. Redux fixes all these issues.
+Redux uses a `store` which keeps all the dispatched states (things we can access from components) from our API. This allows us to update the information on our single-page app easily. Redux was revolutionary for us as we both struggled with passing parameters and information through `useState, useParams and useProps` in React during our Full-Stack Module, it's all so messy and borderline impossible to track. Redux fixes all these issues.
 
-
-
-
-
- 
+This was also the beginning of our work on the extensive front end.
