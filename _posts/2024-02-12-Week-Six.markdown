@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Blog Week Six"
+date:   2024-02-12 10:10:02 +0000
+categories: blog posts
+---
+Welcome to our sixth blog entry for the development of Saving Animals by Josh and Jakub.
+
+`Jakub`
+
+During week six we had almost all of our foundations set so we started to Develop our Rest-Api with all its different endpoints for Vets, Orgs and User on top of changing the ones for Login and Register to accomodate them with Redux on the frontend. This was quite time consuming since we needed to set up our models, then make API Views for them in Django followed by extensive testing in Postman.
+We used postman as it allowed us to test the functionality of our endpoints before we set up Redux for them which introduces a lot more error points.
+
+Once the postman testing has been finished, we went on to Redux all of the endpoints so we can acces them through state in our Frontend, this was a very lengthy with quite a few errors along the way due to the complex nature of setting up redux. 
+
+During this time we ran into issues with splitting the cookie authentication between different types of users. `Vets Orgs Users` The main issue was the fact that we were using a basic django auth user which we cannot edit therefore we cannot attach a user type to it. We came up with a fix by attaching a type to the users profile which dispatches alongside the isAuthenticated piece of state. Now all we had to do is set up private routes, which seemed simple to do but in React Router v5 and the current version is v6 which doesnt allow for anything else but Route components in the router, so we came back to the research stage. After a while we found a solution using an Outlet component which allows us to add logic to our router by tricking it by rendering a `component` which is acutally a outlet with logic for other Routes.
+
+After all these issues have been resolved we set up our Flask app the last component missing in our stack as it needed to be on the back burned until we had all the models and api endpoints set up. It uses sockets to return the closest vets/orgs based on the users location by getting information from our backend.
+
+Next on the line was tackling displaying the app on a mobile device which required static files but Django doesnt serve production static files by default. Luckily whitenoise middle wear allows Django to run our webapp in production without relying on Nginx or other external services. 
+
+Now all we had to do is get the static files which turned out to be a huge pain. Vite build saves static files in a Dist folder, we can use its path for static files but with each build the static file css and js change names which is an issue as hardcoding it isnt an option. We found a github gist fixing this issue but it didnt work for us, after a whole lot more digging we found a solution which takes in the randomly named files and changes them to a set name, now we could implement a `stable` path in our `base.html`. We spent a lot of time trying to make it work and in the end it turned out to be bad path we put into the base.html.
