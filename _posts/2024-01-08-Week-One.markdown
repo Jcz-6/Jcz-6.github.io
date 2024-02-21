@@ -5,3 +5,11 @@ date:   2024-01-08 10:10:02 +0000
 categories: blog posts
 ---
 Welcome to our first blog entry for the development of Saving Animals by Josh and Jakub.
+
+#Jakub
+
+During our first week I was researching different types of backends we could use for our project, imediatelly i narrowed it down to two options [Django][https://www.djangoproject.com/] and [Flask][https://flask.palletsprojects.com/en/3.0.x/], both are python based with a lot of community support and great documentation. After a discussion which Josh we chose Django as we are already familiar with it and our application will need a rest-api backend to serve our frontend and Django is more suited for that.
+
+Next up was the database, Django comes with sqlite3 by default which is more than enough for most people with small projects but its quite basic and doesnt support features such as Geo Co-ordinate storage that is required for our app to work. After a bit of digging I found PostGIS which is an extension for a Postgres Data base which allows us to store geo-cords and gives us the ability to perform distance operations, On top of that I read that it can be integrated into Django quite seemlessly.
+
+After figuring this out I started a empty sample django app to try to connect to a postgres db, I quickly relised its not as easy as just having a Database running. I went on the Django docs website to find a solution for and I found [this][https://docs.djangoproject.com/en/5.0/ref/contrib/gis/install/postgis/].Which lists all the libaries needed for PostGIS and Django. Now I was ready to start developing the backend.
