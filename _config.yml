@@ -22,7 +22,7 @@ title: Saving Animals Dev Blog
 email: jakub.czerniejewski2@mail.dcu.ie
 description: >- # this means to ignore newlines until "baseurl:"
  This page documents our development adventure for our Saving Animals project.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Jcz-6
 
