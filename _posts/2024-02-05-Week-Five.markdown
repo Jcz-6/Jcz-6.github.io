@@ -4,9 +4,7 @@ title:  "Blog Week Five"
 date:   2024-02-05 10:10:02 +0000
 categories: blog posts
 ---
-Welcome to our fifth blog entry for the development of Saving Animals by Josh and Jakub.
-
-`Jakub`
+Welcome to our fifth blog entry for the development of Saving Animals by `Josh and Jakub`.
 
 Continuing from week four, we were in quite the pickle with our session authentication feature. After extensive research and some thinking, I came upon templates in Django which allow us to install a frontend into Django itself therefore allowing us to run the frontend on Django's ` port 8000`.
 

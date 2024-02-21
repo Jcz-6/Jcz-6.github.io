@@ -4,9 +4,7 @@ title:  "Blog Week Seven"
 date:   2024-02-19 10:10:02 +0000
 categories: blog posts
 ---
-Welcome to our seventh blog entry for the development of Saving Animals by Josh and Jakub.
-
-`Jakub`
+Welcome to our seventh blog entry for the development of Saving Animals by `Josh and Jakub`.
 
 This is our final week for the project the pressure is on but we are on the right track. This week is all about the frontend and documentation for Saving Animals.
 

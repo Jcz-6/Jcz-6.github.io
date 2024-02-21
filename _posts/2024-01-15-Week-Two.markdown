@@ -4,9 +4,7 @@ title:  "Blog Week Two"
 date:   2024-01-15 10:10:02 +0000
 categories: blog posts
 ---
-Welcome to our second blog entry for the development of Saving Animals by Josh and Jakub.
-
-`Jakub`
+Welcome to our second blog entry for the development of Saving Animals by `Josh and Jakub`.
 
 The second week was quite slow as I was still trying to get my head around the full stack we would be using. I started focusing on the front end by doing research into different frameworks, some options were Node, React and Svelt. Node was quickly ruled out as it’s quite outdated and requires a lot of files to operate: a `single page` application would be better. Svelte seemed like the better option but we would have to learn it from scratch, we decided to go with React as we know a decent bit about how it works. This will give us a lot more time for our other moving parts.
 

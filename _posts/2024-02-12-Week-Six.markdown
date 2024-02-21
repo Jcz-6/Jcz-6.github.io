@@ -4,9 +4,7 @@ title:  "Blog Week Six"
 date:   2024-02-12 10:10:02 +0000
 categories: blog posts
 ---
-Welcome to our sixth blog entry for the development of Saving Animals by Josh and Jakub.
-
-`Jakub`
+Welcome to our sixth blog entry for the development of Saving Animals by `Josh and Jakub`.
 
 During week six we had almost all of our foundations set so we started to Develop our Rest-Api with all its different endpoints for Vets, Orgs and Users on top of changing the ones for Login and Register to accommodate them with Redux on the frontend. This was quite time-consuming since we needed to set up our models, and then make API Views for them in Django followed by extensive testing in Postman.
 We used Postman as it allowed us to test the functionality of our endpoints before we set up Redux for them which introduces a lot more error points.

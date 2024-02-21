@@ -4,15 +4,13 @@ title:  "Blog Week One"
 date:   2024-01-08 10:10:02 +0000
 categories: blog posts
 ---
-Welcome to our first blog entry for the development of Saving Animals by Josh and Jakub.
+Welcome to our first blog entry for the development of Saving Animals by `Josh and Jakub`.
 
-`Jakub`
+During our first week, we were researching different types of backends we could use for our project, immediately we narrowed it down to two options [Django][django] and [Flask][flask], both are Python-based with a lot of community support and great documentation. After a discussion with, we chose Django as we are already familiar with it and our application will need a rest-api backend to serve our frontend and Django is more suited for that.
 
-During our first week, I was researching different types of backends we could use for our project, immediately I narrowed it down to two options [Django][django] and [Flask][flask], both are Python-based with a lot of community support and great documentation. After a discussion with Josh, we chose Django as we are already familiar with it and our application will need a rest-api backend to serve our frontend and Django is more suited for that.
+Next up was the database, Django comes with SQLite3 by default which is more than enough for most people with small projects but it's quite basic and doesn't support features such as Geo Co-ordinate storage that is required for our app to work. After a bit of digging, We found PostGIS which is an extension for a Postgres Database which allows us to store geo-cords and gives us the ability to perform distance operations, On top of that we read that it can be integrated into Django quite seamlessly.
 
-Next up was the database, Django comes with SQLite3 by default which is more than enough for most people with small projects but it's quite basic and doesn't support features such as Geo Co-ordinate storage that is required for our app to work. After a bit of digging, I found PostGIS which is an extension for a Postgres Database which allows us to store geo-cords and gives us the ability to perform distance operations, On top of that I read that it can be integrated into Django quite seamlessly.
-
-After figuring this out I started an empty sample Django app to try to connect to a Postgres DB, I quickly realised it's not as easy as just having a Database running. I went on the Django docs website to find a solution and I found [this][django-postgis]. Which lists all the libraries needed for PostGIS and Django. Now I was ready to start developing the backend.
+After figuring this out we started an empty sample Django app to try to connect to a Postgres DB, we quickly realised it's not as easy as just having a Database running. We went on the Django docs website to find a solution and we found [this][django-postgis]. Which lists all the libraries needed for PostGIS and Django. Now we were ready to start developing the backend.
 
 [django]: https://www.djangoproject.com/
 [flask]:   https://flask.palletsprojects.com/en/3.0.x/
