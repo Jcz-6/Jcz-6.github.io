@@ -8,6 +8,8 @@ Welcome to our fifth blog entry for the development of Saving Animals by `Josh a
 
 Continuing from week four, we were in quite the pickle with our session authentication feature. After extensive research and some thinking, I came upon templates in Django which allow us to install a frontend into Django itself therefore allowing us to run the frontend on Django's ` port 8000`.
 
+During this week we had a Go ready server completed however we ran into some diffucuty as when the code was pushed it would not work on jakubs machine due to conflicting go versions. This was due to the fact that it was not on docker at this point and the server was ran on the machine via `go run server.go` running it on `port 8080`.
+
 This allows us to overcome the cookie not setting issue, it was running on Dev perfectly. Now we were able to authenticate users in our frontend which brings us to React-Redux.
 
 Once again to up the appeal of this project and to make our lives 'easier' we decided to inject our React frontend with Redux, which is a state management system designed for complex projects such as our one. In essence Redux allows us to track the state of our React components with every detail showing in the Redux Dev Toolkit making debugging and passing information to different components easier and more reliable. 
